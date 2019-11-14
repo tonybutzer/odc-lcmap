@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: prepare
+Version: 0.0.1
+Summary: Python application for ordering and downloading USARD (tiled) scenes
+Home-page: http://github.com/tonybutzer/odc-lcmap
+Author: Tony Butzer
+Author-email: tonybutzer@gmail.com
+License: Unlicense
+Description: Prepare Scripts for USARD
+        ============================
+        
+        ## the **prepare** directory holds the library code
+        
+        
+        ## docs
+        
+        ### Install Sphinx
+        
+        pip install Sphinx
+        
+        
+        ###
+        
+        mkdr docs
+        
+        cd docs
+        
+        sphinx-quickstart
+        
+        cd source; vi conf.py
+        
+        ### Tutorial
+        https://medium.com/@richyap13/a-simple-tutorial-on-how-to-document-your-python-project-using-sphinx-and-rinohtype-177c22a15b5b
+        
+Keywords: usgs lcmap eros
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test

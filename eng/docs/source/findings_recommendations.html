@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/home/tony/bin/pantony.css" type="text/css" />
+</head>
+<body>
+<h1 id="odclcmap-findings-2018">ODC/LCMAP Findings 2018</h1>
+<h2 id="document-overview">Document Overview</h2>
+<p>This document is organized as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Executive Summary</li>
+<li>The Notional Ideal Code Library</li>
+<li>ODC stuff</li>
+<li>LCMAP Stuff</li>
+<li>LSAA Stuff</li>
+<li>DevelopmentSeed &quot;Raft&quot; Prototype</li>
+<li>COGs</li>
+<li>Metadata</li>
+<li>General Stuff</li>
+<li>Databases suck</li>
+</ol>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>After carefully looking at all aspects of the Open Data Cube project and the LCMAP project I have identified some themes for using these complementary components in ways that emphasize there respective strengths. These findings can be summarized as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Use ODC as a prototyping environment and testbed/sandbox environment for exploring science algorithms of several flavors. CCDC represents just one of many application workflows that can be demonstrated and tuned using the ODC platform.</li>
+<li>Use ODC to coordinate internal projects at USGS/EROS by exploring common goals by visual demonstrations of the evolving Landsat Products and metadata. Further by passing ODC tests this may help in validating cloud placement and exploitation strategies for Collection 2.</li>
+<li>Continue to refine the LCMAP code base with an eye toward cloud deployments, look for ways to minimize the list of services that must persist, since the cloud is a metered set of services, anything left on in non-elastic, persistent ways will incur charges from the cloud provider.</li>
+<li>Find ways to evaluate code libraries that are used in your application stack. This paper documents some criteria for code selection and illustrates how various projects can be examined through the lens these criteria reflect.</li>
+</ol>
+<h2 id="the-notional-ideal-code-library">The Notional Ideal Code Library</h2>
+<p>This section discusses the evaluation criteria for examining code modules as candidates for inclusion into the LCMAP code enclave/base. In reviewing the applicability of the Open Data Cube &quot;Core&quot; library/package many of these criteria were used to determine the the ODC library should sit astride of LCMAP and <strong>not</strong> as a fundamental inclusion/dependency in the LCMAP software stack.</p>
+<p>The notional ideal code package has the following attributes:</p>
+<ol style="list-style-type: decimal">
+<li>Easy to install</li>
+<li>Easy to grok</li>
+<li>Easy to modify or extend</li>
+<li>Well documented or self explanatory</li>
+<li>Clean Code LINK HERE</li>
+<li>A simple documented architecture - the source tree matches the graphics</li>
+<li>A code advocate, policy enforcer, software architect, visionary</li>
+<li>Clear reason for being</li>
+<li>Modular; no big balls of mud here</li>
+<li>Code is well organized</li>
+<li>Execution flow is obvious and can be understood before runtime</li>
+<li>Each method has one simple function akin to Functional Programming</li>
+<li>Testable</li>
+<li>Bug Free or bugs as endangered species</li>
+<li>Contained in a <strong>thin</strong> Docker Container</li>
+<li>The ability to orchestrate/deploy in the following scalable ways
+<ol style="list-style-type: decimal">
+<li>AWS Lambda</li>
+<li>Docker Swarm</li>
+<li>Kubernetes</li>
+<li>Mesos</li>
+<li>DASK</li>
+</ol></li>
+<li>Coded in a programming language that is:
+<ol style="list-style-type: decimal">
+<li>Flexible</li>
+<li>Well Loved</li>
+<li>Self Documenting</li>
+<li>Supports multiple paradigms</li>
+<li>Minimizes bugs</li>
+</ol></li>
+</ol>
+<h4 id="what-else">What Else?</h4>
+<p>Well beyond the notional ideal code base one would look for:</p>
+<ol style="list-style-type: decimal">
+<li>The Notional Ideal Development Team</li>
+<li>The Notional Ideal Development Process</li>
+<li>The Notional Ideal Project Leadership</li>
+<li>The Notional Ideal Infrastructure Environment</li>
+<li>The Notional Ideal Strategic Vision</li>
+<li>The Notional Ideal Team Culture</li>
+<li>The Perfect Communication Atmosphere</li>
+</ol>
+<h2 id="section"></h2>
+<h2 id="general-evaluation-criteria">General Evaluation Criteria</h2>
+<h3 id="approach">Approach</h3>
+<h2 id="odc-evaluation">ODC Evaluation</h2>
+<h3 id="odc-strengths">ODC Strengths</h3>
+<h3 id="odc-weaknesses">ODC Weaknesses</h3>
+<ol style="list-style-type: decimal">
+<li><p>ODC is quite large and is monolithic. This by itself is not inherently bad, However; in the context of using all or parts of ODC in the cloud the size and structure of ODC will make it less suitable then smaller component based libraries.</p></li>
+<li>ODC's pace of innovation will not likely keep up with EROS's insatiable technology needs.</li>
+<li>ODC's mission and priorities are not LCMAP specific.</li>
+<li>ODC has limited interest in pyccd collaboration.</li>
+<li>ODC is hard to install and scale.</li>
+<li><p>ODC is still forming its team and is working on the fundamentals</p></li>
+</ol>
+<ul>
+<li><p>Assigning a principle architect</p>
+<pre><code>* Understanding the architecture and related strategic direction
+
+* Working out the bugs discovered as they port the code to the cloud
+
+* ODC is still defining software and system engineering roles or at least they are not well understood by the community</code></pre></li>
+</ul>
+<ol start="7" style="list-style-type: decimal">
+<li><p>ODC carries and depends on a big database [Postgresql]</p>
+<ul>
+<li><p>Databases cost too much to persist in the cloud</p></li>
+<li><p>Web scraping - things like STAC will prevail</p></li>
+<li><p>Databases require DBAs and bog you down with whole bunch of complexity and maintenance headaches</p></li>
+<li><p>Actually this is why we are looking at ODC in the first place - to replace the Cassandra database</p></li>
+<li>Replacing one database with an inferior approach - makes no sense</li>
+</ul></li>
+<li>LCMAP requires an Information Warehouse and Data Store</li>
+</ol>
+<ul>
+<li>ODC [with effort] can extract pixels and metadata - BUT it has no clean mechanism for storing results, intermediate models and raster products.</li>
+</ul>
+<ol start="9" style="list-style-type: decimal">
+<li>ODC has a volunteer culture that makes deliverable accountability and predictive scheduling more difficult</li>
+<li><p>ODC serves many masters - this can challenge the notion of a shared vision</p>
+<ul>
+<li>Many Platforms</li>
+<li>Country Outreach initiatives</li>
+<li>Consensus convergence takes longer</li>
+<li></li>
+</ul></li>
+</ol>
+<p>&quot;&quot;&quot; Pointer to strategic direction paper &quot;&quot;&quot; <a href="https://drive.google.com/drive/u/0/folders/1-A_vCHRZjVtMgZP_Ho-K_3Bhm09uiV05?ths=true">Sanjay's Strategic Communication Directive Paper</a></p>
+<blockquote>
+<p>&quot;We should be mindful of what is desired/ideal vs. what is practical (given limited time and resources).&quot; ## LCMAP Evaluation</p>
+</blockquote>
+<h3 id="reseach-question-re-iterated">Reseach Question Re-iterated</h3>
+<p>Should USGS EROS use the Open Data Cube [framework, library, preparation scripts, and persistent postgresql database] as a cloud based infrastructure replacing (or doing the same job as) the on-premise infrastructure consisting of a Science Execution Engine and Information Warehouse and Data Store?</p>
+<p>I have done heavy research to answer the question and my answer is that LCMAP should:</p>
+<ul>
+<li>use the prototyping aspects of ODC to empirically prove the viability of LCMAP components and algorithms in the cloud.</li>
+<li>and then optimize the cloud architectures and work flows either in concert with the ODC development team or out front of the ODC team.</li>
+</ul>
+<p>Either way the sharing relationship between Geoscience Australia and USGS/EROS and the benefits derived from the ODC intiative (science, community and code) will continue to help the quality of the Landsat Data products as placed in cloud storage and the variety, voracity and velocity of scientific discovery using remote sensing data.</p>
+<p>I view the Open Data Cube - sort of like the keel boat in the &quot;Corp of Discovery&quot; and it will help map the way to the cloud for LCMAP, but not be a long term component of product global/scale LCMAP processing flows in the cloud or on premise.</p>
+<h3 id="lcmap-strenths">LCMAP Strenths</h3>
+<ol style="list-style-type: decimal">
+<li>Forward looking tools, languages and techniques</li>
+<li>Robust practices
+<ul>
+<li>well documented code</li>
+<li>lean code</li>
+<li>well documented project plans</li>
+<li>well documented data products</li>
+<li>well documented data formats</li>
+</ul></li>
+<li>Accountability to leadership and scientists</li>
+<li>Modularity</li>
+<li>Platform Independence</li>
+<li>Tightly Integrated Team with a cohesive vision</li>
+<li>Code is easy to install and unit test</li>
+</ol>
+<h2 id="cloud-approaches">Cloud Approaches</h2>
+<h2 id="technology-lifecycle">Technology Lifecycle</h2>
+<h3 id="promising">Promising</h3>
+<h3 id="strategic">Strategic</h3>
+<h3 id="operational">Operational</h3>
+<h3 id="landfill">Landfill</h3>
+<blockquote>
+<p>&quot;You can't wait for inspiration, you have to go after it with a club.&quot; -- Jack London</p>
+</blockquote>
+<p>Q: Why not all of ODC?</p>
+<pre><code>ODC is too big and its a monolith.
+
+EROS veteran software architects have come to the same conclusion. (bdavis, jon morton, duncan mcgreggor, dave hill)</code></pre>
+<p>A: Answer: Some Q: Which Parts and When? Component When and Why DevOps Techniques 2018 - to ease deployments and os and application setup in the cloud Xarray A number of applications and visualizations are being developed that take an xarray as the input abstraction. S3 This is a given for numerous reasons - easily documented - perhaps this is a small paper COGS COGS or near COGS have been well documented and you can locate the references - perhaps just a pointer rio/gdal These python libraries allow for image read and write to geotiffs in the cloud (also on local disk - but local disk is not in scope)</p>
+<p>Q: Should LCMAP use all, some or part or none of the Open Data Cube as part of its plan for deployment to the cloud? Preface</p>
+<p>Before answering this question below its important to point out the value of the Open Data Cube community and continued collaborations with GeoScience Australia and that the sharing of applications, technologies, source code, infrastructure and data as a result of this continued collaboration is not predicated on the wholesale use of ODC as a production underpinning for LCMAP. Further, the open environment provided by GA in the AWS space is somewhat of a contrast to the more buttoned-down mandated cloud capabilities in the centrally administered Cloud Hosting Service. Recommendations and Suggestions</p>
+<pre><code>Keep collaborating on Open Data Cube, remain on the steering council, remain plugged into the source tree, keep a pulse on the documented and changing architecture, work toward extracting code and concepts into more modular, &quot;Cloud Native&quot; packaging, and dump the database.
+
+Begin porting parts of LCMAP, starting with basic IW+DS access Jupyter Notebooks, tapTool and other test driven development code use cases and use the infrastructure and orchestration techniques developed under the first year ODC efforts to accelerate the schedule for LCMAP to the cloud.
+
+Continue automating all aspects of the testbed/sandbox in the cloud for the benifit of LCMAP and really any cloud projects. This work includes Infrastructure as Code, data extraction, data network transfers, and data reformatting to COGs.</code></pre>
+<p>One idea is to move this effort under Jeff in LCMAP and yield to his extraordinary ability to clearly articulate strategy and outcomes to even the most discerning customer,</p>
+<p>-lets set up a meeting - I hate missing deliverables - but even so I have been ahead of the ODC team in all cases.</p>
+<p>We should also talk about Job fit - and skill mixes - I think this task or at least aspects of it are outside my core capabilities or outside my wheelhouse. Lets brainstorm an approach to keep the customer happy. ​<br />
+​<br />
+​</p>
+</body>
+</html>

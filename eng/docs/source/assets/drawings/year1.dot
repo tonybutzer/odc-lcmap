@@ -1,0 +1,12 @@
+digraph G {
+rankdir=LR
+
+node [shape=ellipse style=filled fillcolor=lightblue1]
+n4[label="AWS S3 Data Lake"]
+
+node [shape=box3d style=filled fillcolor=violet]
+n5[label="Custom, \nPersonalized, \nPruned\n Data Cube"]
+
+n4->n5
+
+}

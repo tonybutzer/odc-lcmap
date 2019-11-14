@@ -1,0 +1,7 @@
+digraph G {
+rankdir=LR
+
+node [shape=component style=filled fillcolor=lawngreen]
+n2[label="ODC-lite & \nSTAC Ecosystem"]
+
+}

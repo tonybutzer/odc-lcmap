@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/home/tony/bin/pantony.css" type="text/css" />
+</head>
+<body>
+<h1 id="odclcmap-special-study-annual-report">2018 ODC/LCMAP Special Study Annual Report</h1>
+<h2 id="ongoing-research-questions">Ongoing Research Questions</h2>
+<ul>
+<li><strong>Should LCMAP use ODC?</strong> -- Should USGS EROS use the Open Data Cube [framework, library, preparation scripts, and persistent postgresql database] as a cloud based infrastructure replacing (or doing the same job as) the on-premise infrastructure consisting of a Science Execution Engine and Information Warehouse and Data Store?</li>
+</ul>
+<p><code>White paper to be delivered in June of 2019.</code></p>
+<ul>
+<li>How do we &quot;Place our Big Data in cloud object storage in a self-describing, cloud-optimized format.&quot; ?</li>
+</ul>
+<p><a href="https://medium.com/pangeo/step-by-step-guide-to-building-a-big-data-portal-e262af1c2977">Pangeo's Answer</a></p>
+<ul>
+<li>What would an ODC as a Service Architecture Look like in the cloud supporting emerging Collection 2 Landsat Data?</li>
+<li>Develop a Conops for ODC as an USGS Landsat Delivery Service?</li>
+</ul>
+<h2 id="accomplishments">Accomplishments</h2>
+<h3 id="usgs-odc-special-study-web-site-version-1.0-completed">USGS ODC Special Study Web Site Version 1.0 Completed</h3>
+<ol style="list-style-type: decimal">
+<li>Delivered on time and within budget</li>
+</ol>
+<h3 id="lcmap-accomplishments">LCMAP Accomplishments</h3>
+<ol style="list-style-type: decimal">
+<li>Began code study of lcmap-pyccd</li>
+<li>Began code study of lcmap-chipmunk</li>
+<li>Began cody study of lcmap-merlin</li>
+<li>Studied rationale for using functional programming methods over object oriented or structured (top-down) techniques</li>
+<li>Acquired test data over Oregon as processed by the USGS EROS mesos cluster</li>
+<li>Completed a pyccd prototype for Oregon tiles and chips consistent with on premise pyccd calculations</li>
+<li>Developed code to decompose xarrays into component band single pixel rod time-series for all of the required pyccd input bands.</li>
+</ol>
+<h3 id="odc-accomplishments">ODC Accomplishments</h3>
+<h4 id="steering-council-participation-on-going">Steering Council Participation (On-going)</h4>
+<ol style="list-style-type: decimal">
+<li>Attend monthly telecoms to discuss ODC strategy and developments</li>
+</ol>
+<p><code>GA's ODC strategy, milestones and deliverables still largely outside of my circle of influence.</code></p>
+<h4 id="odc-data-curation-accomplishments">ODC Data Curation Accomplishments</h4>
+<ol style="list-style-type: decimal">
+<li>Data Sets Delivered:
+<ol style="list-style-type: decimal">
+<li><strong>Oregon</strong> - Landsat Level 1, Tier 1 Scene Based Oregon Data</li>
+<li><strong>Oregon</strong> - Landsat USARD Oregon Gridded/Tiled Data</li>
+<li><strong>Rwanda</strong>/Burundi - Landsat Level 2, [ESPA] Surface Reflectance, Rwanda, Africa ODC International Sandbox, supporting the United Nations Sustainable Development Goals.</li>
+<li><strong>Mexico</strong> - Landsat Level 2, [ESPA] Surface Reflectance (Albers and UTM), Mexico City, Mexico supporting the CEOS 20 by 2020 Initiative.</li>
+<li><strong>California</strong> - Landsat Level 2, [ESPA] Surface Reflectance, California, United States (JSON Metadata) supporting ODC and Development Seed prototype and collaboration activities.</li>
+<li><strong>South Dakota</strong> - Single scene ESPA generated imagery for testing ODC over SD.</li>
+</ol></li>
+<li>Data Ordering and Download
+<ol style="list-style-type: decimal">
+<li>completed <strong>dataDog</strong> software for automated delivery of Level 1, Landsat Data from Earth Explorer.</li>
+<li>Completed <strong>espaDog</strong> for automated sorting of Landsat Tier 1 data and subsequent automated ordering and downloading of associated on-the-fly ESPA processed data.</li>
+</ol></li>
+<li>Data Extraction and Formatting
+<ol style="list-style-type: decimal">
+<li>Developed python code to untar USGS delivered data tarballs in parallel when warranted</li>
+<li>Wrote python code to <strong>create COGs</strong> from the delivered, untarred geotiffs</li>
+</ol></li>
+</ol>
+<h4 id="completed-landsat-metadata-indexing-for-odc-l1-and-l2">Completed Landsat MetaData Indexing for ODC (L1 and L2)</h4>
+<ol style="list-style-type: decimal">
+<li>Decomposed the indexing algorithm the associated database records storing the metadata</li>
+<li>Wrote code to parse metadata (stored in json, xml and MTL) formats</li>
+<li>Wrote Jupyter notebooks to validate indexed data cubes and display the resultant python objects</li>
+</ol>
+<h4 id="architecture-study-and-documentation-completed">Architecture Study and Documentation Completed</h4>
+<ol style="list-style-type: decimal">
+<li>Developed several views of the ODC architecture</li>
+<li>Examined the relationship between the architectural intent of ODC and the actual directory tree of the ODC python code</li>
+</ol>
+<h4 id="documentation-and-reporting">Documentation and Reporting</h4>
+<ol style="list-style-type: decimal">
+<li>Reviewed and edited the ODC documentation set</li>
+<li>Provide monthly status reports and technical demonstrations</li>
+<li>Provided data support to ODC researchers</li>
+</ol>
+<h4 id="examined-odc-as-a-service-prototypes">Examined ODC as a Service Prototypes</h4>
+<ol style="list-style-type: decimal">
+<li>ODC Sandbox</li>
+<li>Testing of ODC Dashboards</li>
+<li>Standing up ODC in SGT Cloud</li>
+</ol>
+<h4 id="visualization-dataard-and-science">Visualization (Data[ARD] and Science)</h4>
+<ol style="list-style-type: decimal">
+<li>LCMAP Model visualization Jupyter notebooks</li>
+<li>Created USARD browse and thumbnails and indexed these in the cloud</li>
+<li>Created Animations using animated GIFs of band combinations and indexes</li>
+</ol>
+<h4 id="evaluation-criteria-study">Evaluation Criteria Study</h4>
+<ol style="list-style-type: decimal">
+<li>Formulated an ODC specific technology reading list and initiated the study plan for this material</li>
+<li>What is a clean architecture?</li>
+<li>What is clean code?</li>
+<li>Software Development Styles and Languages</li>
+<li>What does it mean to be cloud ready and what are the process and re-engineering steps associated with this migration?</li>
+</ol>
+<h4 id="tooling-and-infrastructure">Tooling and Infrastructure</h4>
+<p>Developed the requisite skills for using Open Data Cube and contributing to the open source shared project including:</p>
+<ol style="list-style-type: decimal">
+<li>Jupyter Notebooks</li>
+<li>Typora markdown editing</li>
+<li>Sphinx documentation platform</li>
+<li>Read-the-docs style sheets</li>
+<li>Python</li>
+<li>Functional Programming</li>
+<li>Postgres Databases</li>
+<li>Design Specific Languages</li>
+<li>AWS services</li>
+<li>Infrastructure as code</li>
+<li>Logging</li>
+<li>Orchestration</li>
+<li>Docker</li>
+<li>Git</li>
+</ol>
+<h3 id="project-goals-traceability">Project Goals Traceability</h3>
+<p>This section remembers some of the objectives from last February as they were documented in goals and actions from the Confluence and other sources.</p>
+<h4 id="confluence">Confluence</h4>
+<p><strong>Objectives:</strong> 1. World-class provider of Landsat Data including global data exploitation. 2. Access feasibility and utility of OpenDataCube (ODC) in LCMAP architecture. - LCMAP to leverage: All of ODC; part of ODC; no ODC, - ODC as an USGS hosted service for science and cloud based data exploitation</p>
+<p>USGS Modernization OpsCon includes ODC</p>
+<p>USGS continues to finalize the ODC OpsCon and as a starting point is considering the following scenarios:</p>
+<pre><code>On premises ODC implementation into LCMAP (unlikely at this point in time)
+Full ODC implementation into LCMAP in the cloud
+Partial (component) ODC implementation into LCMAP in the cloud</code></pre>
+<p>USGS continues to use cloud and on-prem ODC setups and has developed a makefile for building ODC and associated notebook libraries for detailed analysis of ODC and LCMAP intersections. (10-31-2018)</p>
+<pre><code>USGS/Kline&#39;s team to standup a cloud instance of ODC in the SGT realm for examining the California Data Lake collection. - Several detailed technical coordination efforts will arise from this collaboration.</code></pre>
+<p>USGS has written a series of exploratory notebooks as proofs for the following LCMAP sub-concepts.(10-31-2018)</p>
+<pre><code>dc.load of USARD L5,L7,L8 (Oregon USA)
+built interface from xarray → ccd.detect()
+created simple visualizations of pixel_qa and ccd probabilities:
+recently (pickled/serialized) ccd.detct output models to local files and therefor S3 storage.</code></pre>
+<p>Each of these incremental proofs will add up to quantifiable, objective, benchmarked decisions on where to place data, output models and processing in the evolving hybrid cloud architecture for LCMAP. (10-31-2018) tb</p>
+<h4 id="ga-usgs-collaboration-annual-report">GA USGS Collaboration Annual Report</h4>
+<ul>
+<li>Under the Sustained Earth Observation (EO) Collaborative Program
+<ul>
+<li>Established in 2015</li>
+<li>to exploit land remote sensing data to monitor the Earth and detect change as it happens.</li>
+<li>funding will support GA’s ongoing contributions to the development of the Open Data Cube platform, as well international collaboration on analysis-ready data.<br />
+</li>
+<li><p>USGS confirmed that Analysis Ready Data will be the standard product of the Landsat program beginning with Collection 2, and that production of these products is formally a part of the Landsat 9 development project.</p></li>
+<li><p>Both parties continue to engage with the impact of cloud technology on their future architecture, noting that access to data and functionality in the cloud greatly expands the potential user base in a way that is not possible with internal or restricted systems.</p></li>
+<li><p>The importance of cloud computing to their future strategies was increasing. Both parties noted, however, that existing infrastructures (such as the National Computational Infrastructure in the case of GA and the Cassandra system in the case of USGS) would remain important assets for the next few years, and that roadmaps needed to take a long-term view.</p></li>
+</ul></li>
+</ul>
+<blockquote>
+<p>The desire to establish ‘predictive’ systems for environmental data was increasing, and that this would require comprehensive cross-disciplinary collaboration, and assimilation of heterogeneous data sets derived from remote and in-situ observations. GA noted Australian Government funding for scoping of an ‘environmental prediction system’, and USGS noted that projection was a key element of their LCMAP program that would require significant attention over coming years. Both agencies noted rapidly increasing interest in systems for monitoring and predicting water quality.</p>
+</blockquote>
+<blockquote>
+<p>The USGS formally joined the Open Data Cube initiative, contributing to the leadership of the program and making technical contributions that will ensure that Landsat data was more easily accessible to the 40+ countries using the open-source platform to exploit Earth observation data.</p>
+</blockquote>
+<blockquote>
+<p>The USGS benefited from expert Australian input on the definition of its future Analysis- Ready Data products. This dialogue increases the likelihood that products generated by USGS will be directly usable in Australian systems, reducing the need for costly custom processing by GA.</p>
+</blockquote>
+<ul>
+<li>Open Data Cube is the conversational framework where the above discussions and documented findings will be solidified and demonstrated in practical ways.</li>
+</ul>
+<h4 id="data-cube-access">Data Cube &amp; Access</h4>
+<ul>
+<li>Development of information warehouse technologies to support time series data exploitation and innovation</li>
+<li><p>Understanding of how best to leverage commercial cloud computing to achieve organisational objectives.</p>
+<ul>
+<li>Increased access to open platforms that support local, national, regional, and global projects increases the use of Landsat data.</li>
+<li>Support for multi-mission application development by the broader user community, by providing a tool that is designed from this perspective from the beginning.</li>
+<li>Easier portability of algorithms, science code, products, and tools between GA, USGS, and the broader community.</li>
+<li>Increased sharing of data by partners, such as CISRO, who's data can complement baseline data streams such as Landsat and Sentinel data.</li>
+<li>The international community and private sector adopts concepts of ARD, producing data that is more easily usable alongside Landsat data.
+<ul>
+<li>Easier portability of algorithms, science code, products, and tools between GA, USGS, and the broader international community, including to/from partner systems via uptake of the Open Data Cube.</li>
+</ul></li>
+</ul></li>
+<li><p>Identifying the functionality in the USGS LCMAP system that GA could interface or ‘port’ to the Open Data Cube project. Availability of this functionality would benefit the user communities of Digital Earth Australia and Landsat data, and ensure the Open Data Cube moves towards supporting internal USGS needs.</p></li>
+<li><p>Ensuring that the Open Data Cube project provides a platform that is easier to install, easier to customise, and easier to contribute both science algorithms and code to. A key priority will be ensuring users can more easily ingest authoritative Landsat data for their areas of interest.</p></li>
+</ul>
+<h2 id="practical-implications-of-this-study">Practical Implications of this Study</h2>
+<p>The above steps were necessary to understand the entire ODC landscape, evaluate ODC's components and develop strategies and tactics that help accelerate EROS cloud developments. Additionally, these activities allow us to establish common context among the development groups in L2PGS, LSAA, ODC and Development Seed to blend the concepts when designing data exploitation schemes for the cloud.</p>
+<p>The quality and versatility of the Collection 2 data as manifested in the cloud will improve as a result of this study and the practical experiments as illustrated/demonstrated by Jupyter notebooks.</p>
+</body>
+</html>

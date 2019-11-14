@@ -1,0 +1,781 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2018 ODC/LCMAP Special Study Annual Report &mdash; ODC-LCMAP 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ODC/LCMAP Findings 2018" href="findings_recommendations.html" />
+    <link rel="prev" title="ODC-LCMAP Special Study Documentation" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ODC-LCMAP
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">ODC-LCMAP Special Study Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#objectives">Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#suggested-activities">Suggested Activities:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#expected-outcomes">Expected Outcomes:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#immersive-approach">Immersive Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#reference">Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="overview.html#clean-code">Clean Code</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="overview.html#other">Other</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2018 ODC/LCMAP Special Study Annual Report</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ongoing-research-questions">Ongoing Research Questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accomplishments">Accomplishments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#usgs-odc-special-study-web-site-version-1-0-completed">USGS ODC Special Study Web Site Version 1.0 Completed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lcmap-accomplishments">LCMAP Accomplishments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#odc-accomplishments">ODC Accomplishments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-data-cube-instances">Open Data Cube Instances</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#steering-council-participation-on-going">Steering Council Participation (On-going)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#odc-data-curation-accomplishments">ODC Data Curation Accomplishments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#completed-landsat-metadata-indexing-for-odc-l1-and-l2">Completed Landsat MetaData Indexing for ODC (L1 and L2)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#architecture-study-and-documentation-completed">Architecture Study and Documentation Completed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documentation-and-reporting">Documentation and Reporting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examined-odc-as-a-service-prototypes">Examined ODC as a Service Prototypes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualization-data-ard-and-science">Visualization (Data[ARD] and Science)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#evaluation-criteria-study">Evaluation Criteria Study</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tooling-and-infrastructure">Tooling and Infrastructure</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#project-goals-traceability">Project Goals Traceability</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#confluence">Confluence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ga-usgs-collaboration-annual-report">GA USGS Collaboration Annual Report</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-cube-access">Data Cube &amp; Access</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practical-implications-of-this-study">Practical Implications of this Study</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="findings_recommendations.html">ODC/LCMAP Findings 2018</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#document-overview">Document Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#executive-summary">Executive Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#the-notional-ideal-code-library">The Notional Ideal Code Library</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#what-else">What Else?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#general-evaluation-criteria">General Evaluation Criteria</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#approach">Approach</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#odc-code-and-project-evaluation">ODC Code and Project Evaluation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#odc-strengths">ODC Strengths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#odc-weaknesses-as-an-lcmap-component">ODC Weaknesses as an LCMAP Component</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#lcmap-code-and-project-evaluation">LCMAP Code and Project Evaluation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#reseach-question-re-iterated">Reseach Question Re-iterated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#lcmap-strengths">LCMAP Strengths</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#on-premise-to-cloud-migration-approaches">On-premise to Cloud Migration Approaches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#cloud-native-building-cloud-ready-applications-on-purpose">Cloud Native - building cloud ready applications on purpose</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#technology-lifecycle">Technology Lifecycle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#promising">Promising</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#strategic">Strategic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#operational">Operational</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#landfill">Landfill</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#technical-debt">Technical Debt</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#causes-of-code-debt">Causes of code debt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#big-ball-of-mud">Big Ball of Mud</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="findings_recommendations.html#evaluation-criteria">Evaluation Criteria</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#general-criteria">General Criteria</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#the-value-of-open-data-cube-community">The VALUE of Open Data Cube Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#lcmap-is-well-designed-and-well-built">LCMAP is well designed and well built</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#development-seed-and-the-stac-cog-approach">Development Seed and the STAC/COG Approach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="findings_recommendations.html#older-answers-to-be-sorted">Older Answers - to be sorted</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="background.html">Background</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="background.html#what-is-open-data-cube">What is Open Data Cube</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="background.html#web-page">Web Page</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#open-data-cube-is-a-pangeo">OPEN Data Cube is a PANGEO</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="background.html#github">Github</a></li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#odc-readthedocs">ODC ReadTheDocs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#countries-using-open-data-cube">Countries using Open Data Cube</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#demos">Demos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#geoscience-australia">Geoscience Australia</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="background.html#presentation-slides">Presentation slides:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#our-fractional-cover-processing-workflow-high-level">Our Fractional Cover processing workflow (high level):</a></li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#cubedash">Cubedash:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#wms-and-terria-examples">WMS and Terria Examples:</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="background.html#fractional-cover-on-top-of-nbar">Fractional cover on top of NBAR:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="background.html#intertidal-extents-model-mangrove-cover-and-nbart-geomedian">Intertidal Extents Model, Mangrove Cover and NBART Geomedian:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="background.html#notebook-video">Notebook video:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="background.html#sentinel-hub">Sentinel Hub</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="a1-conOpsSTAC.html">ODC Operational Concept STAC COG</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#version-0-1">Version 0.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#february-2019">February 2019</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#author-tony-butzer">Author: Tony Butzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#concept-of-operations">Concept of Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#document-overview">Document Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#general-data-lake-model-powerful-paradigm">General Data Lake Model – Powerful Paradigm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#data-lake-to-visualization-and-products">Data Lake to Visualization and Products</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s1-executive-summary">S1 - Executive Summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#vision-contest-here">Vision Contest here:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#scope">SCOPE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#history">History</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="a1-conOpsSTAC.html#year-1-odc-study-emphasis-lcmap-case-study">Year 1 ODC Study Emphasis - LCMAP case study</a></li>
+<li class="toctree-l4"><a class="reference internal" href="a1-conOpsSTAC.html#year-2-odc-study-emphasis">Year 2 ODC Study Emphasis</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#technical-architecture">Technical Architecture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="a1-conOpsSTAC.html#pangeo-reference-architecture">PANGEO Reference Architecture</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#odc-as-is">ODC AS IS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#odc-lite-notional-architecture">ODC-lite Notional Architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#document-purpose">Document Purpose</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s2-science-concept-ecosystem-view">S2 - Science Concept Ecosystem View</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#process-reference-model">Process Reference Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#systems-overview">Systems Overview</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="a1-conOpsSTAC.html#lcmap-example-placeholder">LCMAP Example Placeholder</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#odc-code-and-project-evaluation">ODC Code and Project Evaluation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="a1-conOpsSTAC.html#odc-strengths">ODC Strengths</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#id1">S2 - Science Concept Ecosystem View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s3-system-scope">S3 - System Scope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s4-architectural-components">S4 - Architectural Components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s5-use-cases-and-operational-requirements">S5 - Use Cases and Operational Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#s6-operational-scenarios">S6 - Operational Scenarios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="a1-conOpsSTAC.html#appendices-a-b-c">Appendices [A B C]</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="detailed_research.html">Detailed ODC Research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="detailed_research.html#odc-related">ODC Related</a></li>
+<li class="toctree-l2"><a class="reference internal" href="detailed_research.html#lcmap-related">LCMAP Related</a></li>
+<li class="toctree-l2"><a class="reference internal" href="detailed_research.html#cloud-engineering-related">Cloud Engineering Related</a></li>
+<li class="toctree-l2"><a class="reference internal" href="detailed_research.html#eo-data-related">EO Data Related</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="handbook/index.html">ODC Handbook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="handbook/jupyterhub.html">jupyterhub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handbook/jupyterhub.html#references">references</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/jupyterhub.html#prerequisites">prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#kubernetes">kubernetes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#kops">kops</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#kubctl">kubctl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#awscli">awscli</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/jupyterhub.html#installing">installing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/jupyterhub.html#example">example</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#console-create-ec2-instance-server-with-12-gig-disk">1. Console create ec2 instance/server with 12 gig disk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/jupyterhub.html#install-kops">install kops</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/jupyterhub.html#issues">issues</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/wms.html">WMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#odc-and-wms-plus-wmts-and-sometimes-wcs">ODC and WMS plus WMTS and sometimes WCS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#docker">Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#error">Error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#now-what">Now What?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#wbs">WBS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#layers">Layers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#usgs">USGS</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#clients">Clients</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#servers">Servers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#open-data-cube">Open Data Cube</a></li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/wms.html#tutorial-wms">Tutorial WMS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#searching-the-geoportal">Searching the Geoportal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#build-a-weather-map">Build a weather map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/wms.html#example-map">Example Map</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/tools.html">Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handbook/tools.html#typora-markdown-editor">Typora - markdown editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/tools.html#ogr2ogr">ogr2ogr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="handbook/tools.html#sphinx">sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/data.html">Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="handbook/data.html#metadata">Metadata</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="handbook/data.html#maps">Maps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/data.html#google-data-layer">Google Data Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/data.html#geojson">Geojson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="handbook/data.html#stac-spatiotemporal-asset-catalog">STAC – SpatioTemporal Asset Catalog</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/code.html">Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/odc.html">ODC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/lcmap.html">LCMAP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="handbook/devseed.html">Development Seed</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="wbs/index.html">2019 Work Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes/index.html">Project Notes and Meetings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="notes/index.html#sphinx-markdown">Sphinx Markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="notes/meetings/index.html">Meetings WIP</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/meetings/index.html#odc-lsaa-collaboration">ODC LSAA Collaboration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/meetings/index.html#december-2018">December 2018</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/meetings/index.html#stac-cog-concepts">STAC COG Concepts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/notes.html">Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/notes.html#overview-notes">Overview (Notes)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/unsorted_notes.html">Unsorted Notes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/unsorted_notes.html#areas-of-study">Areas of Study</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/unsorted_notes.html#practical-implications">Practical Implications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/unsorted_notes.html#findings">Findings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/unsorted_notes.html#annual-report-odc-lcmap-2018">Annual Report ODC-LCMAP 2018</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/react.html">Learning React</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/react.html#npm">NPM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/react.html#days-of-react">30 Days of React</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/react.html#note-cntl-b-with-an-html-file-in-sublime">Note - cntl-B with an html file in sublime</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/react.html#day-3-our-first-component">Day 3 - Our First Component</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes/react.html#distraction-1-running-js">Distraction 1 - Running Js</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes/install/index.html">Installation Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes/links.html">Sphinx/RST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="notes/odclinks.html">ODC Links</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#sc">SC</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/odclinks.html#architecture">Architecture</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#documentation">Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/odclinks.html#videos">Videos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#overview-business-case">Overview; Business Case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#web-page">Web Page</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#github">Github</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/odclinks.html#landsat">Landsat</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#landsat-videos">Landsat Videos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#data-and-science">Data and Science</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#coding-12-factor-applications">Coding 12 Factor Applications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/odclinks.html#documentation-tools">Documentation Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="notes/sparse_checkout.html">Git Sparse Checkout</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="notes/sparse_checkout.html#makefile">makefile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="notes/sparse_checkout.html#function">function</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ODC-LCMAP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>2018 ODC/LCMAP Special Study Annual Report</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/annual_report.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="odc-lcmap-special-study-annual-report">
+<h1>2018 ODC/LCMAP Special Study Annual Report<a class="headerlink" href="#odc-lcmap-special-study-annual-report" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ongoing-research-questions">
+<h2>Ongoing Research Questions<a class="headerlink" href="#ongoing-research-questions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Should LCMAP use ODC?</strong> – Should USGS EROS use the Open Data Cube [framework, library, preparation scripts, and persistent postgresql database] as a cloud based infrastructure replacing (or doing the same job as) the on-premise infrastructure consisting of a Science Execution Engine and Information Warehouse and Data Store?</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">White</span> <span class="pre">paper</span> <span class="pre">to</span> <span class="pre">be</span> <span class="pre">delivered</span> <span class="pre">in</span> <span class="pre">June</span> <span class="pre">of</span> <span class="pre">2019.</span></code></p>
+<ul class="simple">
+<li><p>How do we “Place our Big Data in cloud object storage in a self-describing, cloud-optimized format.” ?</p></li>
+</ul>
+<p><a class="reference external" href="https://medium.com/pangeo/step-by-step-guide-to-building-a-big-data-portal-e262af1c2977">Pangeo’s Answer</a></p>
+<p><code class="docutils literal notranslate"><span class="pre">Place</span> <span class="pre">your</span> <span class="pre">Big</span> <span class="pre">Data</span> <span class="pre">in</span> <span class="pre">cloud</span> <span class="pre">object</span> <span class="pre">storage</span> <span class="pre">in</span> <span class="pre">a</span> <span class="pre">self-describing,</span> <span class="pre">cloud-optimized</span> <span class="pre">format.</span></code></p>
+<blockquote>
+<div><p>“ In the cloud, users bring the computing to your data, not the other way around.”</p>
+</div></blockquote>
+<blockquote>
+<div><p>“So if your data are self-describing, cloud-optimized, and stored in cloud object storage, you don’t actually need a portal. The data are already ready for direct access and scientific use. That’s great news, because portals take work to create and maintain. And despite the best intentions of data providers, portals are usually annoying. As a user of scientific data, whenever I encounter a fancy portal, the first thing I do is just look for the link to the FTP server where I can access the raw files. Then I use wget to suck them out into my personal dark replica.” - Ryan Abernathey Assistant Professor, Earth &amp; Environmental Sciences, Columbia University</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>What would an ODC as a Service Architecture Look like in the cloud supporting emerging Collection 2 Landsat Data?</p>
+<ul>
+<li><p>Develop a Conops for ODC as an USGS Landsat Delivery Service?</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="accomplishments">
+<h2>Accomplishments<a class="headerlink" href="#accomplishments" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="usgs-odc-special-study-web-site-version-1-0-completed">
+<h3>USGS ODC Special Study Web Site Version 1.0 Completed<a class="headerlink" href="#usgs-odc-special-study-web-site-version-1-0-completed" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Delivered on time and within budget</p></li>
+</ol>
+</div>
+<div class="section" id="lcmap-accomplishments">
+<h3>LCMAP Accomplishments<a class="headerlink" href="#lcmap-accomplishments" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Began code study of lcmap-pyccd</p></li>
+<li><p>Began code study of lcmap-chipmunk</p></li>
+<li><p>Began cody study of lcmap-merlin</p></li>
+<li><p>Studied rationale for using functional programming methods over object oriented or structured (top-down) techniques</p></li>
+<li><p>Acquired test data over Oregon as processed by the USGS EROS mesos cluster</p></li>
+<li><p>Completed a <strong>pyccd</strong> prototype supported on top of a AWS hosted <strong>Open Data Cube instance</strong> for Oregon tiles and chips consistent with on premise pyccd calculations.  This supports the premise that pyccd can be run above ODC as a proof of concept and supporting smaller AOI specific science investigations</p></li>
+<li><p>Developed code to decompose xarrays into component band single pixel rod time-series for all of the required pyccd input bands.</p></li>
+</ol>
+</div>
+<div class="section" id="odc-accomplishments">
+<h3>ODC Accomplishments<a class="headerlink" href="#odc-accomplishments" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="open-data-cube-instances">
+<h3>Open Data Cube Instances<a class="headerlink" href="#open-data-cube-instances" title="Permalink to this headline">¶</a></h3>
+<ol class="simple">
+<li><p>Running on single Linux box discrete hardware.</p></li>
+<li><p>Running on an open source libvirt/kvm virtual machine</p></li>
+<li><p>Running on a vmware virtual machine</p></li>
+<li><p>Running in the CHS restricted cloud environment</p></li>
+<li><p>Running on the GA/USGS shared AWS project hosts</p></li>
+<li><p>Running in the SGT cloud referencing the Development Seed COGs.</p></li>
+</ol>
+<div class="section" id="steering-council-participation-on-going">
+<h4>Steering Council Participation (On-going)<a class="headerlink" href="#steering-council-participation-on-going" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Attend monthly telecoms to discuss ODC strategy and developments</p></li>
+</ol>
+<p><code class="docutils literal notranslate"><span class="pre">GA's</span> <span class="pre">ODC</span> <span class="pre">strategy,</span> <span class="pre">milestones</span> <span class="pre">and</span> <span class="pre">deliverables</span> <span class="pre">still</span> <span class="pre">largely</span> <span class="pre">outside</span> <span class="pre">of</span> <span class="pre">my</span> <span class="pre">circle</span> <span class="pre">of</span> <span class="pre">influence.</span></code></p>
+</div>
+<div class="section" id="odc-data-curation-accomplishments">
+<h4>ODC Data Curation Accomplishments<a class="headerlink" href="#odc-data-curation-accomplishments" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Data Sets Delivered:</p>
+<ol class="simple">
+<li><p><strong>Oregon</strong> - Landsat Level 1, Tier 1 Scene Based Oregon Data</p></li>
+<li><p><strong>Oregon</strong> - Landsat USARD Oregon Gridded/Tiled Data</p></li>
+<li><p><strong>Rwanda</strong>/Burundi - Landsat Level 2, [ESPA] Surface Reflectance, Rwanda, Africa ODC International Sandbox, supporting the United Nations Sustainable Development Goals.</p></li>
+<li><p><strong>Mexico</strong> - Landsat Level 2, [ESPA] Surface Reflectance (Albers and UTM), Mexico City, Mexico supporting the CEOS 20 by 2020 Initiative.</p></li>
+<li><p><strong>California</strong> - Landsat Level 2, [ESPA] Surface Reflectance, California, United States (JSON Metadata) supporting ODC and Development Seed prototype and collaboration activities.</p></li>
+<li><p><strong>South Dakota</strong> - Single scene ESPA generated imagery for testing ODC over SD.</p></li>
+</ol>
+</li>
+<li><p>Data Ordering and Download</p>
+<ol class="simple">
+<li><p>completed <strong>dataDog</strong> software for automated delivery of Level 1, Landsat Data from Earth Explorer.</p></li>
+<li><p>Completed <strong>espaDog</strong> for automated sorting of Landsat Tier 1 data and subsequent automated ordering and downloading of associated on-the-fly ESPA processed data.</p></li>
+</ol>
+</li>
+<li><p>Data Extraction and Formatting</p>
+<ol class="simple">
+<li><p>Developed python code to untar USGS delivered data tarballs in parallel when warranted</p></li>
+<li><p>Wrote python code to <strong>create COGs</strong> from the delivered, untarred geotiffs</p></li>
+</ol>
+</li>
+</ol>
+</div>
+<div class="section" id="completed-landsat-metadata-indexing-for-odc-l1-and-l2">
+<h4>Completed Landsat MetaData Indexing for ODC (L1 and L2)<a class="headerlink" href="#completed-landsat-metadata-indexing-for-odc-l1-and-l2" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Decomposed the indexing algorithm the associated database records storing the metadata</p></li>
+<li><p>Wrote code to parse metadata (stored in json, xml and MTL) formats</p></li>
+<li><p>Wrote Jupyter notebooks to validate indexed data cubes and display the resultant python objects</p></li>
+</ol>
+</div>
+<div class="section" id="architecture-study-and-documentation-completed">
+<h4>Architecture Study and Documentation Completed<a class="headerlink" href="#architecture-study-and-documentation-completed" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Developed several views of the ODC architecture</p></li>
+<li><p>Examined the relationship between the architectural intent of ODC and the actual directory tree of the ODC python code</p></li>
+<li><p>Detailed findings to be itemized on this web site (time permitting).</p></li>
+</ol>
+</div>
+<div class="section" id="documentation-and-reporting">
+<h4>Documentation and Reporting<a class="headerlink" href="#documentation-and-reporting" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Reviewed and edited the ODC documentation set</p></li>
+<li><p>Provide monthly status reports and technical demonstrations</p></li>
+<li><p>Provided data support to ODC researchers</p></li>
+</ol>
+</div>
+<div class="section" id="examined-odc-as-a-service-prototypes">
+<h4>Examined ODC as a Service Prototypes<a class="headerlink" href="#examined-odc-as-a-service-prototypes" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>ODC Sandbox</p></li>
+<li><p>Testing of ODC Dashboards</p></li>
+<li><p>Standing up ODC in SGT Cloud</p></li>
+</ol>
+</div>
+<div class="section" id="visualization-data-ard-and-science">
+<h4>Visualization (Data[ARD] and Science)<a class="headerlink" href="#visualization-data-ard-and-science" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>LCMAP Model visualization Jupyter notebooks</p></li>
+<li><p>Created USARD browse and thumbnails and indexed these in the cloud</p></li>
+<li><p>Created Animations using animated GIFs of band combinations and indexes</p></li>
+</ol>
+<p><a class="reference external" href="https://apps.sentinel-hub.com/eo-browser/?lat=-2.18965&amp;lng=30.23326&amp;zoom=14&amp;time=2017-07-01&amp;preset=3_FALSE_COLOR&amp;datasource=Landsat%208%20USGS">Notional Example Visualization</a></p>
+</div>
+<div class="section" id="evaluation-criteria-study">
+<h4>Evaluation Criteria Study<a class="headerlink" href="#evaluation-criteria-study" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Formulated an ODC specific technology reading list and initiated the study plan for this material</p></li>
+<li><p>What is a clean architecture?</p></li>
+<li><p>What is clean code?</p></li>
+<li><p>Software Development Styles and Languages</p></li>
+<li><p>What does it mean to be cloud ready and what are the process and re-engineering steps associated with this migration?</p></li>
+</ol>
+</div>
+<div class="section" id="tooling-and-infrastructure">
+<h4>Tooling and Infrastructure<a class="headerlink" href="#tooling-and-infrastructure" title="Permalink to this headline">¶</a></h4>
+<p>Developed the requisite skills for using Open Data Cube and contributing to the open source shared project including:</p>
+<ol class="simple">
+<li><p>Jupyter Notebooks</p></li>
+<li><p>Typora markdown editing</p></li>
+<li><p>Sphinx documentation platform</p></li>
+<li><p>Read-the-docs style sheets</p></li>
+<li><p>Python</p></li>
+<li><p>Functional Programming</p></li>
+<li><p>Postgres Databases</p></li>
+<li><p>Design Specific Languages</p></li>
+<li><p>AWS services</p></li>
+<li><p>Infrastructure as code</p></li>
+<li><p>Logging</p></li>
+<li><p>Orchestration</p></li>
+<li><p>Docker</p></li>
+<li><p>Git</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="project-goals-traceability">
+<h3>Project Goals Traceability<a class="headerlink" href="#project-goals-traceability" title="Permalink to this headline">¶</a></h3>
+<p>This section remembers some of the objectives from last February as they were documented in goals and actions from the Confluence and other sources.</p>
+<div class="section" id="confluence">
+<h4>Confluence<a class="headerlink" href="#confluence" title="Permalink to this headline">¶</a></h4>
+<p><strong>Objectives:</strong></p>
+<ol class="simple">
+<li><p>World-class provider of Landsat Data including global data exploitation.</p></li>
+<li><p>Access feasibility and utility of OpenDataCube (ODC) in LCMAP architecture.</p>
+<ul class="simple">
+<li><p>LCMAP to leverage: All of ODC; part of ODC; no ODC,</p></li>
+<li><p>ODC as an USGS hosted service for science and cloud based data exploitation</p></li>
+</ul>
+</li>
+</ol>
+<p>USGS Modernization OpsCon includes ODC</p>
+<p>USGS continues to finalize the ODC OpsCon and as a starting point is considering the following scenarios:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">On</span> <span class="n">premises</span> <span class="n">ODC</span> <span class="n">implementation</span> <span class="n">into</span> <span class="n">LCMAP</span> <span class="p">(</span><span class="n">unlikely</span> <span class="n">at</span> <span class="n">this</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">time</span><span class="p">)</span>
+<span class="n">Full</span> <span class="n">ODC</span> <span class="n">implementation</span> <span class="n">into</span> <span class="n">LCMAP</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">cloud</span>
+<span class="n">Partial</span> <span class="p">(</span><span class="n">component</span><span class="p">)</span> <span class="n">ODC</span> <span class="n">implementation</span> <span class="n">into</span> <span class="n">LCMAP</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">cloud</span>
+</pre></div>
+</div>
+<p>USGS continues to use cloud and on-prem ODC setups and has developed a makefile for building ODC and associated notebook libraries for detailed analysis of ODC and LCMAP intersections. (10-31-2018)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">USGS</span><span class="o">/</span><span class="n">Kline</span><span class="s1">&#39;s team to standup a cloud instance of ODC in the SGT realm for examining the California Data Lake collection. - Several detailed technical coordination efforts will arise from this collaboration.</span>
+</pre></div>
+</div>
+<p>USGS has written a series of exploratory notebooks as proofs for the following LCMAP sub-concepts.(10-31-2018)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>dc.load of USARD L5,L7,L8 (Oregon USA)
+built interface from xarray → ccd.detect()
+created simple visualizations of pixel_qa and ccd probabilities:
+recently (pickled/serialized) ccd.detct output models to local files and therefor S3 storage.
+</pre></div>
+</div>
+<p>Each of these incremental proofs will add up to quantifiable, objective, benchmarked decisions on where to place data, output models and processing in the evolving hybrid cloud architecture for LCMAP. (10-31-2018) tb</p>
+</div>
+<div class="section" id="ga-usgs-collaboration-annual-report">
+<h4>GA USGS Collaboration Annual Report<a class="headerlink" href="#ga-usgs-collaboration-annual-report" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Under the Sustained Earth Observation (EO) Collaborative Program</p>
+<ul>
+<li><p>Established in 2015</p></li>
+<li><p>to exploit land remote sensing data to monitor the Earth and detect change as it happens.</p></li>
+<li><p>funding will support GA’s ongoing contributions to the development of the Open Data Cube platform, as well international collaboration on analysis-ready data.</p></li>
+<li><p>USGS confirmed that Analysis Ready Data will be the standard product of the Landsat program beginning with Collection 2, and that production of these products is formally a part of the Landsat 9 development project.</p></li>
+<li><p>Both parties continue to engage with the impact of cloud technology on their future architecture, noting that access to data and functionality in the cloud greatly expands the potential user base in a way that is not possible with internal or restricted systems.</p></li>
+<li><p>The importance of cloud computing to their future strategies was increasing. Both parties noted, however, that existing infrastructures (such as the National Computational Infrastructure in the case of GA and the Cassandra system in the case of USGS) would remain important assets for the next few years, and that roadmaps needed to take a long-term view.</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>The desire to establish ‘predictive’ systems for environmental data was increasing, and that
+this would require comprehensive cross-disciplinary collaboration, and assimilation of
+heterogeneous data sets derived from remote and in-situ observations. GA noted Australian
+Government funding for scoping of an ‘environmental prediction system’, and USGS noted
+that projection was a key element of their LCMAP program that would require significant
+attention over coming years. Both agencies noted rapidly increasing interest in systems for
+monitoring and predicting water quality.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The USGS formally joined the Open Data Cube initiative, contributing to the leadership of
+the program and making technical contributions that will ensure that Landsat data was more
+easily accessible to the 40+ countries using the open-source platform to exploit Earth
+observation data.</p>
+</div></blockquote>
+<blockquote>
+<div><p>The USGS benefited from expert Australian input on the definition of its future Analysis-
+Ready Data products. This dialogue increases the likelihood that products generated by
+USGS will be directly usable in Australian systems, reducing the need for costly custom
+processing by GA.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Open Data Cube is the conversational framework where the above discussions and documented findings will be solidified and demonstrated in practical ways.</p></li>
+</ul>
+</div>
+<div class="section" id="data-cube-access">
+<h4>Data Cube &amp; Access<a class="headerlink" href="#data-cube-access" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>Development of information warehouse technologies to support time series data exploitation and innovation</p>
+<ul>
+<li><p>Understanding of how best to leverage commercial cloud computing to achieve organisational objectives.</p>
+<ul>
+<li><p>Increased access to open platforms that support local, national, regional, and global projects increases the use of Landsat data.</p>
+<ul>
+<li><p>Support for multi-mission application development by the
+broader user community, by providing a tool that is designed from this perspective from the beginning.</p></li>
+<li><p>Easier portability of algorithms, science code, products, and tools between GA, USGS, and the broader community.</p></li>
+</ul>
+</li>
+<li><p>Increased sharing of data by partners, such as CISRO, who’s data can complement baseline data streams such as Landsat and Sentinel data.</p></li>
+<li><p>The international community and private sector adopts concepts of ARD, producing data that is more easily usable alongside Landsat data.</p>
+<ul>
+<li><p>Easier portability of algorithms, science code, products, and tools between GA, USGS, and the broader international community, including to/from partner systems via uptake of the Open Data Cube.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Identifying the functionality in the USGS LCMAP system that GA could interface or ‘port’ to
+the Open Data Cube project. Availability of this functionality would benefit the user
+communities of Digital Earth Australia and Landsat data, and ensure the Open Data Cube
+moves towards supporting internal USGS needs.</p></li>
+<li><p>Ensuring that the Open Data Cube project provides a platform that is easier to install, easier
+to customise, and easier to contribute both science algorithms and code to. A key priority
+will be ensuring users can more easily ingest authoritative Landsat data for their areas of
+interest.</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="practical-implications-of-this-study">
+<h2>Practical Implications of this Study<a class="headerlink" href="#practical-implications-of-this-study" title="Permalink to this headline">¶</a></h2>
+<p>The above steps were necessary to understand the entire ODC landscape, evaluate ODC’s components and develop strategies and tactics that help accelerate EROS cloud developments. Additionally, these activities allow us to establish common context among the development groups in L2PGS, LSAA, ODC and Development Seed to blend the concepts when designing data exploitation schemes for the cloud.</p>
+<p>The quality and versatility of the Collection 2 data as manifested in the cloud will improve as a result of this study and the practical experiments as illustrated/demonstrated by Jupyter notebooks.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="findings_recommendations.html" class="btn btn-neutral float-right" title="ODC/LCMAP Findings 2018" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral float-left" title="ODC-LCMAP Special Study Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

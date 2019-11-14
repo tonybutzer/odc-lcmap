@@ -1,0 +1,26 @@
+digraph notion {
+node [shape=folder]
+"*.MTL"
+"*.xml"
+node [shape=component]
+mtl_to_json 
+create_stac
+node [shape=folder]
+"HUB.json"
+node [shape=folder style=filled fillcolor=lawngreen]
+"scene_json.stac"
+node [shape=ellipse style=filled fillcolor=lightblue1]
+aws_s3_data_lake
+
+
+"*.MTL" -> mtl_to_json -> "HUB.json" -> create_stac -> "scene_json.stac" -> aws_s3_data_lake
+
+
+
+
+node [shape=signature style=filled fillcolor=moccasin]
+"uses cumulus/pvl"
+
+mtl_to_json -> "uses cumulus/pvl"
+}
+

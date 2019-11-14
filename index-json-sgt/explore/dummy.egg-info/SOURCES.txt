@@ -1,0 +1,10 @@
+README.rst
+setup.py
+dummy/__init__.py
+dummy/bog.py
+dummy.egg-info/PKG-INFO
+dummy.egg-info/SOURCES.txt
+dummy.egg-info/dependency_links.txt
+dummy.egg-info/not-zip-safe
+dummy.egg-info/requires.txt
+dummy.egg-info/top_level.txt

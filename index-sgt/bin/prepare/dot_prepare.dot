@@ -1,0 +1,46 @@
+digraph G {
+    prepare__add_dataset [label="add_dataset"];
+    prepare__get_coords [label="get_coords"];
+    prepare__format_obj_key [label="format_obj_key"];
+    prepare__get_geo_ref_points [label="get_geo_ref_points"];
+    prepare [label="prepare"];
+    prepare__absolutify_paths [label="absolutify_paths"];
+    prepare__get_coords__transform [label="transform"];
+    prepare__make_rules [label="make_rules"];
+    prepare__add_datacube_dataset [label="add_datacube_dataset"];
+    prepare__make_xml_doc [label="make_xml_doc"];
+    prepare__get_metadata_docs [label="get_metadata_docs"];
+    prepare___parse_value [label="_parse_value"];
+    prepare__satellite_ref [label="satellite_ref"];
+    prepare___parse_group [label="_parse_group"];
+    prepare__get_s3_url [label="get_s3_url"];
+    prepare__get_band_filenames [label="get_band_filenames"];
+    prepare -> prepare__format_obj_key [style="dashed"];
+    prepare -> prepare__add_datacube_dataset [style="dashed"];
+    prepare -> prepare__get_coords [style="dashed"];
+    prepare -> prepare__get_metadata_docs [style="dashed"];
+    prepare -> prepare__make_rules [style="dashed"];
+    prepare -> prepare__get_band_filenames [style="dashed"];
+    prepare -> prepare___parse_value [style="dashed"];
+    prepare -> prepare__get_geo_ref_points [style="dashed"];
+    prepare -> prepare__make_xml_doc [style="dashed"];
+    prepare -> prepare__get_s3_url [style="dashed"];
+    prepare -> prepare___parse_group [style="dashed"];
+    prepare -> prepare__add_dataset [style="dashed"];
+    prepare -> prepare__satellite_ref [style="dashed"];
+    prepare -> prepare__absolutify_paths [style="dashed"];
+    prepare__get_coords -> prepare__get_coords__transform [style="dashed"];
+    prepare__add_datacube_dataset -> prepare__add_dataset;
+    prepare__add_datacube_dataset -> prepare__make_rules;
+    prepare__add_datacube_dataset -> prepare__get_metadata_docs;
+    prepare__add_datacube_dataset -> prepare__get_s3_url;
+    prepare__get_coords -> prepare__get_coords__transform;
+    prepare__get_metadata_docs -> prepare__make_xml_doc;
+    prepare__make_xml_doc -> prepare__get_band_filenames;
+    prepare__make_xml_doc -> prepare__absolutify_paths;
+    prepare__make_xml_doc -> prepare__satellite_ref;
+    prepare___parse_group -> prepare___parse_value;
+    prepare__absolutify_paths -> prepare__get_s3_url;
+    prepare__absolutify_paths -> prepare__format_obj_key;
+}
+

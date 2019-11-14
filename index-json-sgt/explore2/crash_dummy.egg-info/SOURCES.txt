@@ -1,0 +1,8 @@
+README.rst
+setup.py
+crash_dummy.egg-info/PKG-INFO
+crash_dummy.egg-info/SOURCES.txt
+crash_dummy.egg-info/dependency_links.txt
+crash_dummy.egg-info/not-zip-safe
+crash_dummy.egg-info/requires.txt
+crash_dummy.egg-info/top_level.txt

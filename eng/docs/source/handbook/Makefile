@@ -1,0 +1,2 @@
+local:
+	(cd ../../ ; make local)

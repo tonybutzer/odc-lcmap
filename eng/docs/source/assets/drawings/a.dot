@@ -1,0 +1,10 @@
+digraph G {
+n0[label="Source Data Curation"]
+n1[label="Analysis Ready Data &"]
+n2[label="Analysis Ready Metadata"]
+n3[label="Data Discover"]
+n4[label="Spatial Analysis &"]
+n5[label="Spectral Analysis"]
+n6[label="Assessments & Projections"]
+n7[label=""]
+}

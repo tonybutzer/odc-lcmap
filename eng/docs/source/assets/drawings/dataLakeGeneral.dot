@@ -1,0 +1,20 @@
+digraph G {
+rankdir=LR
+
+node [shape=rectangle style=filled fillcolor=moccasin]
+n0[label="Analysis Ready Metadata "]
+
+node [shape=tab style=filled fillcolor=moccasin]
+n3[label="[*.MTL, *.stac]"]
+node [shape=rectangle style=filled fillcolor=lawngreen]
+n2[label="Analysis Ready Data"]
+node [shape=folder style=filled fillcolor=lawngreen]
+n1[label="[*_cog.tif]"]
+node [shape=ellipse style=filled fillcolor=lightblue1]
+n4[label="AWS S3 Data Lake"]
+
+n0 -> n4
+n3 -> n4
+n2 -> n4
+n1 -> n4
+}

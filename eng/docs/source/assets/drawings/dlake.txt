@@ -1,0 +1,5 @@
+Analysis Ready Metadata
+[*.tif]
+Analysis Ready Data
+[*.MTL, *.stac]
+AWS S3 Data Lake

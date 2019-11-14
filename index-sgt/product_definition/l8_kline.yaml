@@ -1,0 +1,108 @@
+name: l8_kline
+description: Landsat 8 ARD California Product Definition - Kristi Kline LSAA
+metadata_type: eo
+
+metadata:
+    platform:
+        code: LANDSAT_8
+    instrument:
+        name: OLI_TIRS
+    product_type: USARD
+    format:
+        name: GeoTiff
+
+measurements:
+    - name: 'sr_band1'
+      aliases: [band_1, sr_band1]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'blue'
+      aliases: [band_2, blue]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'green'
+      aliases: [band_3, green]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'red'
+      aliases: [band_4, red]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'nir'
+      aliases: [band_5, nir]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'swir1'
+      aliases: [band_6, swir1]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'swir2'
+      aliases: [band_7, swir2]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'panchromatic'
+      aliases: [band_8, panchromatic]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'cirrus'
+      aliases: [band_9, cirrus]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'lwir1'
+      aliases: [band_10, lwir1]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'lwir2'
+      aliases: [band_11, lwir2]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'therm'
+      aliases: [btb10, therm]
+      dtype: int16
+      nodata: -9999
+      units: '1'
+
+    - name: 'pixel_qa'
+      aliases: [PIXELQA, pixel_qa]
+      dtype: int16
+      nodata: 0
+      units: '1'
+      flags_definition:
+        fill:
+          bits: [0]
+          description: Fill
+          values: {0: false, 1: true}
+        clear:
+          bits: [1]
+          description: Clear
+          values: {0: false, 1: true}
+        water:
+          bits: [2]
+          description: Water
+          values: {0: false, 1: true}
+        cloud:
+          bits: [5]
+          description: Cloud
+          values: {0: false, 1: true}

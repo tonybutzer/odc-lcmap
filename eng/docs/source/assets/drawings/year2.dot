@@ -1,0 +1,11 @@
+digraph G {
+rankdir=LR
+
+node [shape=tab style=filled fillcolor=moccasin]
+n0[label="Visualizations & \n Map/Raster \nPRODUCTS "]
+node [shape=component style=filled fillcolor=lawngreen]
+n2[label="ODC-lite & \nSTAC Ecosystem"]
+
+
+n2 -> n0
+}
